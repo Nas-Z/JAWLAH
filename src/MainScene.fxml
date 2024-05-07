@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="parentPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: white;">
+         <children>
+         <Button fx:id="logOutBtn" layoutX="687.0" layoutY="297.0" mnemonicParsing="false" onAction="#logOut" style="-fx-border-width: 0; -fx-background-color: whitce;" text="Log Out &gt;&gt;" textFill="#ffbc20">
+               <font>
+                  <Font name="Yu Gothic Bold" size="15.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="18.0" layoutY="-15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/img1.png" />
+               </image>
+            </ImageView>
+            <GridPane layoutX="-10.0" layoutY="99.0" prefHeight="395.0" prefWidth="562.0">
+               <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Button fx:id="riyadhBtn1" alignment="BOTTOM_RIGHT" contentDisplay="TOP" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#riyadh" prefHeight="115.0" prefWidth="164.0" style="-fx-background-color: white;" text="RIYADH" GridPane.valignment="TOP">
+                     <font>
+                        <Font name="Verdana Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="86.0" fitWidth="165.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../Images/Riyadh.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="jeddahBtn1" contentDisplay="TOP" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#jeddah" prefHeight="115.0" prefWidth="164.0" style="-fx-background-color: white;" text="JEDDAH" GridPane.columnIndex="1" GridPane.valignment="TOP">
+                     <graphic>
+                        <ImageView fitHeight="86.0" fitWidth="165.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../Images/Jeddah.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Verdana Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="ulaBtn1" contentDisplay="TOP" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ula" prefHeight="115.0" prefWidth="164.0" style="-fx-background-color: white;" text="AL-ULA" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                     <graphic>
+                        <ImageView fitHeight="86.0" fitWidth="165.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../Images/Ula.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Verdana Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="tabukBtn1" contentDisplay="TOP" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#tabuk" prefHeight="115.0" prefWidth="164.0" style="-fx-background-color: white;" text="TABUK" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                     <graphic>
+                        <ImageView fitHeight="86.0" fitWidth="165.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../Images/Tabuk.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Verdana Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="dammamBtn1" contentDisplay="TOP" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#dammam" prefHeight="115.0" prefWidth="164.0" style="-fx-background-color: white;" text="DAMMAM" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                     <graphic>
+                        <ImageView fitHeight="86.0" fitWidth="165.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../Images/DAMMAM.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Verdana Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="abhaBtn1" contentDisplay="TOP" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#abha" prefHeight="115.0" prefWidth="164.0" style="-fx-background-color: white;" text="ABHA" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                     <graphic>
+                        <ImageView fitHeight="86.0" fitWidth="165.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../Images/Abha.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Verdana Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </GridPane>
+            <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="103.0" layoutY="-15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/img1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="188.0" layoutY="-15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/img1.png" />
+               </image>
+            </ImageView>
+            <Text fill="#176b87" fontSmoothingType="LCD" layoutX="526.0" layoutY="235.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="OUTSIDE" strokeWidth="0.0" text="See Saudi in a Variety of Ways.." textAlignment="CENTER" wrappingWidth="227.5637615043113">
+               <font>
+                  <Font name="Arima Koshi Bold" size="26.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="273.0" layoutY="-15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/img1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="358.0" layoutY="-14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/img1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="443.0" layoutY="-14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/img1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="528.0" layoutY="-14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/img1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="613.0" layoutY="-14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/img1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="697.0" layoutY="-14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/img1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="527.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/logo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="640.0" layoutY="336.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/img2.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="userCommentsBtn" layoutX="511.0" layoutY="456.0" mnemonicParsing="false" onAction="#displayUserComments" style="-fx-border-color: orange; -fx-border-width: 4; -fx-border-radius: 4; -fx-background-color: #DED0B6;" stylesheets="@loginDesign.css" text="Your Comments">
+               <font>
+                  <Font name="Yu Gothic Light" size="12.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="jeddahPane" prefHeight="500.0" prefWidth="800.0" visible="false">
+         <children>
+            <Label alignment="CENTER" layoutX="15.0" layoutY="330.0" prefHeight="18.0" prefWidth="562.0" text="IT WORKED!" textAlignment="CENTER" visible="false">
+               <font>
+                  <Font name="System Bold" size="46.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="199.0" fitWidth="263.0" layoutX="267.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true" scaleX="3.09" scaleY="2.5">
+               <image>
+                  <Image url="@../Images/jeddah2.jpg" />
+               </image>
+            </ImageView>
+            <Line endX="546.4736938476562" endY="1.5967749277479015E-5" layoutX="21.0" layoutY="250.0" startX="-26.216888427734375" startY="1.52587890625E-5" stroke="WHITE" />
+            <Text fill="WHITE" layoutX="55.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jeddah">
+               <font>
+                  <Font name="Arima Koshi Bold" size="36.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="55.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This ancient port city is now a cosmopolitan hub that’s home to modern hotels, fine dining and big-ticket events like the Saudi Arabian Grand Prix." wrappingWidth="391.00225830078125">
+               <font>
+                  <Font name="Annai MN Regular" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#bca37f" layoutX="40.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Top Attractions places">
+               <font>
+                  <Font name="Arima Koshi Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text fill="#bca37f" layoutX="610.0" layoutY="447.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A quiet residential area by the sea within Jeddah's waterfrontextends to the marina." wrappingWidth="184.21774900982325" />
+            <ImageView fitHeight="105.0" fitWidth="180.0" layoutX="10.0" layoutY="300.0" onMouseClicked="#baladDisplay" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Al%20Balad%20(Historic%20Jeddah).jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="146.0" fitWidth="180.0" layoutX="210.0" layoutY="300.0" onMouseClicked="#fakiehAquariumDisplay" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Fakieh%20Aquarium.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="146.0" fitWidth="180.0" layoutX="410.0" layoutY="300.0" onMouseClicked="#yachtClubDisplay" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/yacht-club.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="146.0" fitWidth="180.0" layoutX="610.0" layoutY="300.0" onMouseClicked="#artPromenadeDisplay" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Jeddah%20Art%20Promenade.jpg" />
+               </image>
+            </ImageView>
+            <Text fill="#113946" layoutX="10.0" layoutY="429.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Al Balad (Historic Jeddah)">
+               <font>
+                  <Font name="Arima Koshi Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#bca37f" layoutX="10.0" layoutY="445.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Explore the area registered in theUNESCO World Heritage List." wrappingWidth="152.0" />
+            <Text fill="#113946" layoutX="210.0" layoutY="429.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fakieh Aquarium">
+               <font>
+                  <Font name="Arima Koshi Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#113946" layoutX="410.0" layoutY="429.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jeddah Yacht Club">
+               <font>
+                  <Font name="Arima Koshi Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#bca37f" layoutX="210.0" layoutY="445.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A unique marine exhibition housing more than 200 species." wrappingWidth="152.0" />
+            <Text fill="#bca37f" layoutX="409.0" layoutY="447.0" strokeType="OUTSIDE" strokeWidth="0.0" text="An experience that stays in the memory of the visitors. This is the first of its kind in the Red Sea." wrappingWidth="184.21774900982325" />
+            <Text fill="#113946" layoutX="610.0" layoutY="429.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jeddah Art Promenade">
+               <font>
+                  <Font name="Arima Koshi Bold" size="14.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="riyadhPane" prefHeight="500.0" prefWidth="800.0" visible="false">
+         <children>
+            <Label alignment="CENTER" layoutX="139.0" layoutY="332.0" prefHeight="18.0" prefWidth="569.0" text="RIYADH!" visible="false">
+               <font>
+                  <Font size="42.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="800.0" layoutX="264.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true" scaleX="2.93" scaleY="1.7">
+               <image>
+                  <Image url="@../Images/top-attraction-riyadh.jpg" />
+               </image>
+            </ImageView>
+            <Line endX="480.5" layoutX="307.0" layoutY="252.0" startX="-294.5" stroke="#bca37f" />
+            <Text fill="#fff2d8" layoutX="9.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Riyadh">
+               <font>
+                  <Font name="Arima Koshi Bold" size="36.0" />
+               </font>
+            </Text>
+            <Text fill="#fff2d8" layoutX="10.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="With its blend of ancient and modern, Riyadh makes for an enchanting cultural union — especially after dark, when visitors can explore and be entertained all at once." wrappingWidth="220.0">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#bca37f" layoutX="40.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Top Attractions places">
+               <font>
+                  <Font name="Arima Koshi Bold" size="18.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="146.0" fitWidth="180.0" layoutX="10.0" layoutY="300.0" onMouseClicked="#edgeWorldDisplay" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Edge%20of%20the%20World%20Ry.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="146.0" fitWidth="180.0" layoutX="210.0" layoutY="300.0" onMouseClicked="#masmakDisplay" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Al%20Masmak%20Palace%20RY.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="146.0" fitWidth="180.0" layoutX="410.0" layoutY="300.0" onMouseClicked="#boulevardDisplay" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Boulevard%20Riyadh%20City.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="146.0" fitWidth="180.0" layoutX="610.0" layoutY="300.0" onMouseClicked="#murabbaDisplay" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Al%20Murabba%20Palace.jpg" />
+               </image>
+            </ImageView>
+            <Text fill="#113946" layoutX="10.0" layoutY="419.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edge of the World">
+               <font>
+                  <Font name="Arima Koshi Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#bca37f" layoutX="10.0" layoutY="444.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You should not miss the opportunity of standing at the edge of the world." wrappingWidth="152.0" />
+            <Text fill="#113946" layoutX="210.0" layoutY="419.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Al Masmak Palace">
+               <font>
+                  <Font name="Arima Koshi Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#bca37f" layoutX="210.0" layoutY="444.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Discover the glories of Saudi history in the corridors of the ancient AlMasmak Palace." wrappingWidth="152.0" />
+            <Text fill="#113946" layoutX="410.0" layoutY="419.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Boulevard Riyadh City">
+               <font>
+                  <Font name="Arima Koshi Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#bca37f" layoutX="410.0" layoutY="444.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The largest entertainment area in the capital city of Riyadh" wrappingWidth="152.0" />
+            <Text fill="#113946" layoutX="610.0" layoutY="419.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Al Murabba Palace">
+               <font>
+                  <Font name="Arima Koshi Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#bca37f" layoutX="610.0" layoutY="444.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The palace that was once the home of King Abdulaziz Al Saud, the founder of the kingdom." wrappingWidth="152.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="ulaPane" prefHeight="500.0" prefWidth="800.0" visible="false">
+         <children>
+            <Label alignment="CENTER" layoutX="159.0" layoutY="355.0" prefHeight="18.0" prefWidth="242.0" text="AL-ULA" visible="false">
+               <font>
+                  <Font size="42.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="800.0" layoutX="267.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true" scaleX="3.0" scaleY="1.8">
+               <image>
+                  <Image url="@../Images/qasr-alfarid-alula.jpeg" />
+               </image>
+            </ImageView>
+            <Line endX="547.5" layoutX="233.0" layoutY="266.0" startX="-221.5" stroke="#bca37f" />
+            <Text fill="#fff2d8" layoutX="515.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AlUla, with its rich details, is a historical mine people seek from all over the world.  On its land cultures met, and many civilizations were built, especially at Hegra, the first Saudi site to enter the UNESCO World Heritage List." wrappingWidth="220.0">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#bca37f" layoutX="33.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AlUla">
+               <font>
+                  <Font name="Arima Koshi Bold" size="36.0" />
+               </font>
+            </Text>
+            <Text fill="#bca37f" layoutX="28.0" layoutY="293.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Top Attractions places">
+               <font>
+                  <Font name="Arima Koshi Bold" size="18.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="146.0" fitWidth="180.0" layoutX="10.0" layoutY="310.0" onMouseClicked="#hijazRailwayDisplay" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Hijaz%20Railway%20Station%20at%20AlUla.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="146.0" fitWidth="180.0" layoutX="210.0" layoutY="310.0" onMouseClicked="#oldTownDisplay" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/AlUla%20Old%20Town.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="146.0" fitWidth="180.0" layoutX="410.0" layoutY="310.0" onMouseClicked="#jabalFilDisplay" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Jabal%20Al-Fil.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="146.0" fitWidth="180.0" layoutX="610.0" layoutY="310.0" onMouseClicked="#marayaDisplay" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Maraya%20Concert%20Hall.jpg" />
+               </image>
+            </ImageView>
+            <Text fill="#113946" layoutX="10.0" layoutY="429.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hijaz Railway Station at AlUla">
+               <font>
+                  <Font name="Arima Koshi Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#bca37f" layoutX="10.0" layoutY="454.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wagons that Navigated AlUla Lands." wrappingWidth="152.0" />
+            <Text fill="#113946" layoutX="210.0" layoutY="429.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AlUla Old Town">
+               <font>
+                  <Font name="Arima Koshi Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#bca37f" layoutX="210.0" layoutY="454.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A long history and heritage monuments worth contemplating." wrappingWidth="152.0" />
+            <Text fill="#113946" layoutX="410.0" layoutY="429.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jabal Al-Fil">
+               <font>
+                  <Font name="Arima Koshi Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#bca37f" layoutX="410.0" layoutY="454.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Discover a natural sculpture that embraces the sky." wrappingWidth="152.0" />
+            <Text fill="#113946" layoutX="610.0" layoutY="429.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Maraya Concert Hall">
+               <font>
+                  <Font name="Arima Koshi Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#bca37f" layoutX="610.0" layoutY="454.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Maraya Concert Hall is a masterpiece reflecting the surrounding beauty." wrappingWidth="152.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="tabukPane" prefHeight="500.0" prefWidth="800.0" visible="false">
+         <children>
+            <ImageView fitHeight="183.0" fitWidth="267.0" layoutX="267.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true" scaleX="3.0" scaleY="2.5">
+               <image>
+                  <Image url="@../Images/tabok.jpg" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="190.0" layoutY="332.0" prefHeight="62.0" prefWidth="213.0" text="TABUK!" visible="false">
+               <font>
+                  <Font size="42.0" />
+               </font>
+            </Label>
+            <Text fill="WHITE" layoutX="60.0" layoutY="71.0" stroke="#514e49" strokeLineCap="ROUND" strokeType="OUTSIDE" strokeWidth="0.0" text="Tabuk">
+               <font>
+                  <Font name="Arima Koshi Bold" size="36.0" />
+               </font>
+            </Text>
+            <Text fill="#424642" layoutX="42.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Top Attractions places">
+               <font>
+                  <Font name="Arima Koshi Bold" size="18.0" />
+               </font>
+            </Text>
+            <Line endX="481.1761474609375" endY="-3.0517578125E-5" layoutX="305.0" layoutY="275.0" startX="-290.3390197753906" startY="-3.0517578125E-5" stroke="WHITE" strokeDashOffset="2.0" />
+            <ImageView fitHeight="99.0" fitWidth="180.0" layoutX="10.0" layoutY="310.0" onMouseClicked="#muroojDisplay" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/almuruj-park-tabuk-new.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="146.0" fitWidth="180.0" layoutX="210.0" layoutY="310.0" onMouseClicked="#mudHouseDisplay" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Tabuk%20Attraction%20Mud%20House.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="146.0" fitWidth="180.0" layoutX="410.0" layoutY="310.0" onMouseClicked="#hokairMallDisplay" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Alhokair%20Mall%20in%20Tabuk.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="146.0" fitWidth="180.0" layoutX="610.0" layoutY="310.0" onMouseClicked="#boulevardTabukDisplay" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/tabuk-boulevard-new.jpg" />
+               </image>
+            </ImageView>
+            <Text fill="#424642" layoutX="10.0" layoutY="429.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Al Murooj Park in Tabuk">
+               <font>
+                  <Font name="Arima Koshi Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#bbab8c" layoutX="8.0" layoutY="449.0" strokeType="OUTSIDE" strokeWidth="0.0" text="With the beauty of Tabuk's weather, you can spend enjoyable moments with family or friends in Al Murooj Park at any time" wrappingWidth="181.3987317886872">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Text>
+            <Text fill="#424642" layoutX="210.0" layoutY="429.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tabuk Attraction Mud House">
+               <font>
+                  <Font name="Arima Koshi Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#bbab8c" layoutX="210.0" layoutY="454.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A tourist landmark that conveys details of the region's past." wrappingWidth="152.0" />
+            <Text fill="#424642" layoutX="410.0" layoutY="429.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Alhokair Mall in Tabuk">
+               <font>
+                  <Font name="Arima Koshi Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#bbab8c" layoutX="410.0" layoutY="454.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A Shopping and Entertainment Destination." wrappingWidth="152.0" />
+            <Text fill="#424642" layoutX="610.0" layoutY="429.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Boulevard Tabuk">
+               <font>
+                  <Font name="Arima Koshi Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#bbab8c" layoutX="610.0" layoutY="454.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your destination to spend the most enjoyable times." wrappingWidth="152.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#827d7d44" height="112.0" layoutX="44.0" layoutY="125.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="270.0" />
+            <Text fill="#f3f4ed" layoutX="47.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="str" text="The sky of Tabuk Province resounds with traditional arts mixed with the melodies of the rababa and sung poems. Some of the province's archaeological sites date back 500 years BC and are filled with timeless historical stories." textAlignment="JUSTIFY" wrappingWidth="257.8937683105469">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="abhaPane" prefHeight="500.0" prefWidth="800.0" visible="false">
+         <children>
+            <Label alignment="CENTER" layoutX="233.0" layoutY="332.0" text="ABHA!" visible="false">
+               <font>
+                  <Font size="42.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="179.0" fitWidth="200.0" layoutX="300.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true" scaleX="4.0" scaleY="2.5">
+               <image>
+                  <Image url="@../Images/abha1.jpg" />
+               </image>
+            </ImageView>
+            <Text fill="#5e6f64" layoutX="31.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Top Attractions places">
+               <font>
+                  <Font name="Arima Koshi Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="29.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="At an altitude of 2,200 m between the peaks of the Sarawat Mountains, Abha, is ideally located in southwestern region of Saudi Arabia. Its exceptional location allows you to embrace the clouds and wonder around its mountaintops" wrappingWidth="335.16316498332964" />
+            <Text fill="WHITE" layoutX="31.0" layoutY="83.0" stroke="#514e49" strokeLineCap="ROUND" strokeType="OUTSIDE" strokeWidth="0.0" text="Abha's">
+               <font>
+                  <Font name="Arima Koshi Bold" size="36.0" />
+               </font>
+            </Text>
+            <Line endX="468.9884033203125" endY="-6.2283935546875" layoutX="314.0" layoutY="270.0" startX="-300.6917419433594" startY="-6.2283935546875" stroke="#004225" />
+            <ImageView fitHeight="99.0" fitWidth="180.0" layoutX="10.0" layoutY="310.0" onMouseClicked="#rijalAlmaa_AB" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Rijal%20Almaa%20village%20in%20Aseer.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="146.0" fitWidth="180.0" layoutX="210.0" layoutY="310.0" onMouseClicked="#fatimahMuseumDisplay" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Fatimah's%20Museum%20of%20Aseeri%20Woman's%20Heritage.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="146.0" fitWidth="180.0" layoutX="410.0" layoutY="310.0" onMouseClicked="#highCityDisplay" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/hight%20city.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="146.0" fitWidth="180.0" layoutX="610.0" layoutY="310.0" onMouseClicked="#binHamsanDisplay" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Bin%20hamsan%20heritage%20village.jpg" />
+               </image>
+            </ImageView>
+            <Text fill="#424642" layoutX="10.0" layoutY="422.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rijal Almaa village in Aseer">
+               <font>
+                  <Font name="Arima Koshi Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#424642" layoutX="410.0" layoutY="422.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The High City">
+               <font>
+                  <Font name="Arima Koshi Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#424642" layoutX="610.0" layoutY="422.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bin hamsan heritage village">
+               <font>
+                  <Font name="Arima Koshi Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#bbab8c" layoutX="10.0" layoutY="443.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Discover the hidden beauty of Rijal Almaa village, its unique history, location, architecture, and ruins." wrappingWidth="181.3987317886872" />
+            <Text fill="#bbab8c" layoutX="410.0" layoutY="459.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Grasp the wonders of the High City" wrappingWidth="152.0" />
+            <Text fill="#424642" layoutX="210.0" layoutY="422.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fatimah's Museum of Aseeri Woman's Heritage" wrappingWidth="226.72654199677527">
+               <font>
+                  <Font name="Arima Koshi Bold" size="11.0" />
+               </font>
+            </Text>
+            <Text fill="#bbab8c" layoutX="205.0" layoutY="459.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Discover the art of Al-Qatt Al-Aseeri and its significance inspired by the local cultural identity of Abha." wrappingWidth="185.70510476408572">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Text>
+            <Text fill="#bbab8c" layoutX="615.0" layoutY="444.0" strokeType="OUTSIDE" strokeWidth="0.0" text="An architectural masterpiece and heritage landmark that reflects the amazing history of Aseer." wrappingWidth="168.99148917323572" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="dammamPane" prefHeight="500.0" prefWidth="800.0" visible="false">
+         <children>
+            <Label alignment="CENTER" layoutX="193.0" layoutY="332.0" text="DAMMAM!" visible="false">
+               <font>
+                  <Font size="42.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="300.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true" scaleX="4.0" scaleY="3.3">
+               <image>
+                  <Image url="@../Images/banner-dammam-en.jpg" />
+               </image>
+            </ImageView>
+            <Text fill="#176b87" layoutX="26.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Top Attractions places">
+               <font>
+                  <Font name="Arima Koshi Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="38.0" layoutY="71.0" stroke="#514e49" strokeLineCap="ROUND" strokeType="OUTSIDE" strokeWidth="0.0" text="Dammam">
+               <font>
+                  <Font name="Arima Koshi Bold" size="36.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="37.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dammam possesses the qualities of scarcity, originality and wealth, which made it the pearl of the Arabian Gulf. Its strategic location in the eastern region is of great importance to the economy of Saudi Arabia, as it includes the first oil well that produced promising commercial quantities that allowed Saudi Arabia to lead the scene of global oil markets to this day." wrappingWidth="407.3584289550781" />
+            <Line endX="481.20703125" layoutX="292.0" layoutY="212.0" startX="-267.0299987792969" stroke="WHITE" strokeLineCap="ROUND" strokeWidth="4.0" />
+            <ImageView fitHeight="99.0" fitWidth="180.0" layoutX="10.0" layoutY="282.0" onMouseClicked="#marjanIslandDisplay" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/marjan.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="146.0" fitWidth="180.0" layoutX="210.0" layoutY="282.0" onMouseClicked="#takytBaharDisplay" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/takyah.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="146.0" fitWidth="180.0" layoutX="410.0" layoutY="282.0" onMouseClicked="#cityBikeDisplay" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/city-bike.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="146.0" fitWidth="180.0" layoutX="610.0" layoutY="282.0" onMouseClicked="#scitechDisplay" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/scitech.jpg" />
+               </image>
+            </ImageView>
+            <Text fill="#176b87" layoutX="610.0" layoutY="398.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Scitech Center">
+               <font>
+                  <Font name="Arima Koshi Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#176b87" layoutX="410.0" layoutY="398.0" strokeType="OUTSIDE" strokeWidth="0.0" text="City Bike in Al-Khobar">
+               <font>
+                  <Font name="Arima Koshi Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#176b87" layoutX="210.0" layoutY="397.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Takyt Bahar">
+               <font>
+                  <Font name="Arima Koshi Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#176b87" layoutX="14.0" layoutY="399.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A Fun Stroll in Coral Island (Marjan Island)" wrappingWidth="186.39084686992044">
+               <font>
+                  <Font name="Arima Koshi Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="#b6bbc4" layoutX="14.0" layoutY="442.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Beauty in the Middle of Gulf Waters." wrappingWidth="168.99148917323572" />
+            <Text fill="#b6bbc4" layoutX="208.0" layoutY="435.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Including an Area for Cafes and Restaurants and TakytBoulevard for Shopping." wrappingWidth="168.99148917323572" />
+            <Text fill="#b6bbc4" layoutX="410.0" layoutY="435.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A bike tour by the sea." wrappingWidth="168.99148917323572" />
+            <Text fill="#b6bbc4" layoutX="616.0" layoutY="435.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A Journey of Learning." wrappingWidth="168.99148917323572" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="backBtn" layoutX="6.0" mnemonicParsing="false" onAction="#back" onMouseEntered="#glowEnter" onMouseExited="#glowExit" style="-fx-background-color: transparent;" visible="false">
+         <graphic>
+            <ImageView fitHeight="41.0" fitWidth="41.0" onMouseDragEntered="#glowEnter" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/icons8-back-50.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <AnchorPane fx:id="commentsVidPane" layoutX="127.0" layoutY="93.0" prefHeight="315.0" prefWidth="538.0" style="-fx-background-color: WHITE;" visible="false">
+         <children>
+            <MediaView fx:id="mediaViewJed" fitHeight="314.0" fitWidth="296.0" preserveRatio="false" />
+            <ListView fx:id="listViewJed" layoutX="296.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="220.0" prefWidth="250.0" />
+            <TextField fx:id="commentTxtField" layoutX="296.0" layoutY="220.0" prefHeight="26.0" prefWidth="186.0" promptText="Add a Comment" />
+            <Button fx:id="addCommentBtn" layoutX="493.0" layoutY="218.0" mnemonicParsing="false" onAction="#addComment" styleClass="login-btn" stylesheets="@loginDesign.css" text="Add" />
+            <Button fx:id="closeCommentVidPaneBtn" layoutX="391.0" layoutY="263.0" mnemonicParsing="false" onAction="#closeCommebtVidPane" styleClass="login-btn" stylesheets="@loginDesign.css" text="CLOSE" />
+            <ImageView fitHeight="56.0" fitWidth="60.0" layoutX="296.0" layoutY="239.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/img1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="56.0" fitWidth="60.0" layoutX="487.0" layoutY="258.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/img2.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="userCommentsPane" layoutX="216.0" layoutY="26.0" prefHeight="375.0" prefWidth="358.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 3; -fx-border-radius: 3; -fx-background-color: #DED0B6;" visible="false">
+         <children>
+            <ListView fx:id="userCommentsLV" layoutX="79.0" layoutY="14.0" prefHeight="270.0" prefWidth="200.0" />
+            <ComboBox fx:id="cityCBox" layoutX="104.0" layoutY="294.0" onAction="#displayPlaces" prefWidth="150.0" promptText="Select a City" styleClass="create-btn" stylesheets="@loginDesign.css" />
+            <ComboBox fx:id="placeCBox" disable="true" layoutX="104.0" layoutY="327.0" onAction="#displayPlaceUserComments" prefWidth="150.0" promptText="Select a Place" styleClass="create-btn" stylesheets="@loginDesign.css" />
+            <ImageView fitHeight="59.0" fitWidth="66.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/img2.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="59.0" fitWidth="66.0" layoutX="285.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/img2.jpg" />
+               </image>
+            </ImageView>
+            <Button layoutX="293.0" layoutY="336.0" mnemonicParsing="false" onAction="#closeUserComments" styleClass="login-btn" stylesheets="@loginDesign.css" text="CLOSE" />
+            <Button contentDisplay="TOP" layoutX="279.0" layoutY="106.0" mnemonicParsing="false" onAction="#editComment" styleClass="login-btn" stylesheets="@loginDesign.css" text="EDIT">
+               <graphic>
+                  <ImageView fitHeight="56.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/img1.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <ImageView fitHeight="59.0" fitWidth="66.0" layoutX="285.0" layoutY="225.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/img2.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="59.0" fitWidth="66.0" layoutX="14.0" layoutY="225.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/img2.jpg" />
+               </image>
+            </ImageView>
+            <Button contentDisplay="TOP" layoutX="4.0" layoutY="106.0" mnemonicParsing="false" onAction="#deleteComment" prefHeight="64.0" prefWidth="56.0" styleClass="login-btn" stylesheets="@loginDesign.css" text="DELETE">
+               <graphic>
+                  <ImageView fitHeight="56.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/img1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
